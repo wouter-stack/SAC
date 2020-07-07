@@ -1,0 +1,77 @@
+{
+	"id": "com.sample.box",
+	"version": "1.0.2",
+	"name": "Box",
+	"description": "A box sample",
+	"newInstancePrefix": "Box",
+	"icon": "D:/OneDrive - INSUO/KNOWLEDGE/SAC/Custom widgets/box/icon.png",
+	"vendor": "Sample",
+	"eula": "",
+	"license": "",
+	"webcomponents": [
+		{
+			"kind": "main",
+			"tag": "com-sample-box",
+			"url": "https://insuo1-my.sharepoint.com/personal/vanhouttewouter_insuo1_onmicrosoft_com/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9pbnN1bzEtbXkuc2hhcmVwb2ludC5jb20vOmY6L2cvcGVyc29uYWwvdmFuaG91dHRld291dGVyX2luc3VvMV9vbm1pY3Jvc29mdF9jb20vRXNIbTQxdmtWTmRHaG1UckE1aUNpWHdCZXgwYkFlbHFiaW50TFRlNnEwdzhUZz9ydGltZT1LdktjU0ZBaTJFZw&id=%2Fpersonal%2Fvanhouttewouter%5Finsuo1%5Fonmicrosoft%5Fcom%2FDocuments%2FKNOWLEDGE%2FSAC%2FCustom%20widgets%2Fbox%2Fbox%2Ejs&parent=%2Fpersonal%2Fvanhouttewouter%5Finsuo1%5Fonmicrosoft%5Fcom%2FDocuments%2FKNOWLEDGE%2FSAC%2FCustom%20widgets%2Fbox",
+			"integrity": "",
+			"ignoreIntegrity": true
+		},
+		{
+			"kind": "styling",
+			"tag": "com-sample-box-styling",
+			"url": "https://insuo1-my.sharepoint.com/personal/vanhouttewouter_insuo1_onmicrosoft_com/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9pbnN1bzEtbXkuc2hhcmVwb2ludC5jb20vOmY6L2cvcGVyc29uYWwvdmFuaG91dHRld291dGVyX2luc3VvMV9vbm1pY3Jvc29mdF9jb20vRXNIbTQxdmtWTmRHaG1UckE1aUNpWHdCZXgwYkFlbHFiaW50TFRlNnEwdzhUZz9ydGltZT1LdktjU0ZBaTJFZw&id=%2Fpersonal%2Fvanhouttewouter%5Finsuo1%5Fonmicrosoft%5Fcom%2FDocuments%2FKNOWLEDGE%2FSAC%2FCustom%20widgets%2Fbox%2Fbox%5Fstyling%2Ejs&parent=%2Fpersonal%2Fvanhouttewouter%5Finsuo1%5Fonmicrosoft%5Fcom%2FDocuments%2FKNOWLEDGE%2FSAC%2FCustom%20widgets%2Fbox",
+			"integrity": "",
+			"ignoreIntegrity": true
+		},
+		{
+			"kind": "builder",
+			"tag": "com-sample-box-builder",
+			"url": "https://insuo1-my.sharepoint.com/:u:/g/personal/vanhouttewouter_insuo1_onmicrosoft_com/EcQVV2Xv_7xLqeTqM__a-CIBrgwAIYl_I9u7VOPTgwL2vw?e=tx3S75",
+			"integrity": "",
+			"ignoreIntegrity": true
+		}
+	],
+	"properties": {
+		"color": {
+			"type": "string",
+			"description": "Background color",
+			"default": "red"
+		},
+		"opacity": {
+			"type": "number",
+			"description": "Opacity",
+			"default": 1
+		},
+		"width": {
+			"type": "integer",
+			"default": 100
+		},
+		"height": {
+			"type": "integer",
+			"default": 100
+		}
+	},
+	"methods": {
+		"setColor": {
+			"description": "Sets the background color.",
+			"parameters": [
+				{
+					"name": "newColor",
+					"type": "string",
+					"description": "The new background color"
+				}
+			],
+			"body": "this.color = newColor;"
+		},
+		"getColor": {
+			"returnType": "string",
+			"description": "Returns the background color.",
+			"body": "return this.color;"
+		}
+	},
+	"events": {
+		"onClick": {
+			"description": "Called when the user clicks the Box."
+		}
+	}
+}
